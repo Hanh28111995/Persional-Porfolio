@@ -271,7 +271,7 @@ img {
 /*BUTTONS*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: var(--first-color) ;
   color: var(--first-color-lighten);
   padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);
@@ -604,7 +604,7 @@ img {
   font-weight: var(--font-medium);
 }
 
-.contact__button {
+.contact__button input[type=submit]  {
   outline: none;
   border: none;
   font-family: var(--body-font);

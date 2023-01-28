@@ -10,7 +10,7 @@
 
     <!-- ===== BOX ICONS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-   
+
     <!-- animation -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Tailwind -->
@@ -391,14 +391,15 @@
             <span class="section-subtitle">Contact Me</span>
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact__container bd-grid">
-                <form onsubmit="sendEmail(); reset(); " class="contact__form px-8 drop toRight">
+                <form onsubmit="sendEmail(); reset(); return false" class="contact__form px-8 drop toRight"
+                    autocomplete="off" role="presentation">
                     <div class="contact__inputs">
-                        <input id="name" type="text" placeholder="Name" class="contact__input">
-                        <input id="email" type="email" placeholder="Email" class="contact__input">
+                        <input id="name" type="search" placeholder="Name" class="contact__input" required>
+                        <input id="email" type="email" placeholder="Email" class="contact__input" required>
                     </div>
                     <textarea id="message" name="" id="" cols="30" rows="10" placeholder="Message"
-                        class="contact__input"></textarea>
-                    <input type="submit" value="Send Message" class="button contact__button">
+                        class="contact__input" required autocomplete="off"></textarea>
+                    <input type="submit" value="Send Message" class="button contact__button bg-black">
                 </form>
                 <div class="drop toLeft px-8">
                     <div class="contact__info">
