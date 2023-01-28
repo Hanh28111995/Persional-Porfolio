@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+    <!-- animation -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Personal portfolio | Hanh Tran</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+            <div>
+                <a href="#" class="nav__logo">Hanh Tran</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <!-- <li class="nav__item"><a href="#services" class="nav__link">Services</a></li> -->
+                    <li class="nav__item"><a href="#works" class="nav__link">Project</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home section" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <div class="home__img">
+                        <img src="assets/img/avatar-circle.png" alt="">
+                    </div>
+                    <h1 class="home__title">Hanh Tran</h1>
+                    <span class=" home__profession">Frontend Developer</span>
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/ha%CC%A3nh-tr%C3%A2%CC%80n-45a766258"
+                            class="home__social-link"><i class="bx bxl-linkedin"></i></a>
+                        <a href="https://github.com/Hanh28111995" class="home__social-link"><i
+                                class="bx bxl-github"></i></a>
+                        <!-- <a href="#" class="home__social-link"><i class="bx bxl-facebook"></i></a> -->
+                        <!-- <a href="#" class="home__social-link"><i class="bx bxl-behance"></i></a> -->
+                    </div>
+                    <a download="" href="./assets/File/cv_fe_hanhtran-2023.pdf" id="download-btn"
+                        class="button home__button" onclick="downloadPDF()">Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <span class="section-subtitle">My intro</span>
+            <h2 class="section-title">About Me</h2>
+            <div class="about__container bd-grid">
+                <div class="about__data">
+                    <p class="about__description px-8 text-left drop toBottom">
+                        Hi, I'm a frontend developer.<br>
+                        I knew about HTML-CSS when i was working on a I.O.T project in the University.<br>
+                        In 2021, I start to learn about Front end and build my personal projects.<br>
+                        Until now, i'm learning many things from my mentor, updating my knowledge
+                        everyday.
+                    </p>
+                    <img src="assets/img/personal-img1.jpg" alt="" class="about__img drop toTop">
+                </div>
+                <div class="drop toLeft">
+                    <div class="about__information">
+                        <h3 class="about__information-title">Information</h3>
+                        <div class="about__information-data">
+                            <i class='bx bx-user about__information-icon'></i>
+                            <span>Tran Huu Hanh</span>
+                        </div>
+                        <div class="about__information-data">
+                            <i class='bx bx-calendar about__information-icon'></i>
+                            <span>28-11-1995</span>
+                        </div>
+                        <div class="about__information-data">
+                            <i class='bx bx-home about__information-icon'></i>
+                            <span>Ho Chi Minh City, Viet Nam</span>
+                        </div>
+                    </div>
+
+                    <div class="about__information">
+                        <h3 class="about__information-title">Job and Experience</h3>
+                        <div class="about__information-data">
+                            <i class='bx bx-briefcase about__information-icon'></i>
+                            <div>
+                                <span class="about__information-subtitle">6 Months <br>Embedded programming</span>
+                                <span class="about__information-subtitle-small">Chienowa Co</span>
+                            </div>
+                        </div>
+
+                        <div class="about__information-data">
+                            <i class='bx bx-medal about__information-icon'></i>
+                            <div>
+                                <span class="about__information-subtitle">1 Year <br>Learning FrontEnd</span>
+                                <span class="about__information-subtitle-small">Cybersoft Academy</span>
+                            </div>
+                        </div>
+
+                        <div class="about__information-data">
+                            <i class='bx bx-briefcase about__information-icon'></i>
+                            <div>
+                                <span class="about__information-subtitle">6 Months <br>Intern</span>
+                                <span class="about__information-subtitle-small">GPT GROUP Co</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="skilledu">
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <span class="section-subtitle">Why Choose Me</span>
+                <h2 class="section-title">My expertise Area</h2>
+
+                <div class="skills__container text-center drop toBottom">
+                    <div class="skills__content">
+                        <h6 class="skills__subtitle mb-14">Programming Languages & Tools</h6>
+                        <div class="skill-list grid grid-cols-2 md:grid-cols-5 gap-5 my-8">
+                            <div
+                                class="skill-item col-span-1 hover:text-primary flex flex-col items-center transition duration-200 hover:scale-110 cursor-scale">
+                                <svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 50 50" class="w-8">
+                                    <path
+                                        d="M9 7l3 34 14 4 14-4 3-34H9zm24.76 28l-7.77 2-7.76-2-.39-5h3.86l.18 2 4.12.62 4.17-.62.41-5H17.59l.96-12H34l.7 6H31l-.23-2h-8.36l-.32 4h12.66l-.99 12z">
+                                    </path>
+                                </svg>
+                                <p class="name pt-3 text-base font-semibold">HTML</p>
+                            </div>
+                            <div
+                                class="skill-item col-span-1 hover:text-primary flex flex-col items-center transition duration-200 hover:scale-110 cursor-scale">
+                                <svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 30 30" class="w-8">
+                                    <path
+                                        d="M25.428 3.333A1 1 0 0024.683 3H5.317a1 1 0 00-.994 1.11l2.202 19.823c.044.403.329.74.719.851l7.48 2.137a.993.993 0 00.55 0l7.48-2.137a1 1 0 00.719-.851L25.676 4.11a.996.996 0 00-.248-.777zm-4.912 9.741l-.446 7.285-5.038 1.647-5.038-1.647-.191-3.484h2.55l.064 1.584 2.615.887 2.615-.887.191-2.85h-5.612l-.127-2.534h5.867l.191-2.534H9.356l-.191-2.535h11.67l-.319 5.068z">
+                                    </path>
+                                </svg>
+                                <p class="name pt-3 text-base font-semibold">CSS</p>
+                            </div>
+
+                            <div
+                                class="skill-item col-span-1 hover:text-primary flex flex-col items-center transition duration-200 hover:scale-110 cursor-scale">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="28px" height="28px"
+                                    stroke="currentColor" fill="currentColor">
+                                    <path
+                                        d="M45.274,2.325C45.084,2.118,44.817,2,44.536,2H5.464C5.183,2,4.916,2.118,4.726,2.325S4.443,2.81,4.468,3.089l3.52,39.427 c0.037,0.412,0.324,0.759,0.722,0.873l16.01,4.573C24.809,47.987,24.902,48,24.994,48s0.185-0.013,0.274-0.038l16.024-4.573 c0.398-0.114,0.685-0.461,0.722-0.873l3.518-39.427C45.557,2.81,45.463,2.532,45.274,2.325z M12,29.004l7,1.942V11h4v26l-11-3.051 V29.004z M38.054,22L37,34.25L27,37v-4.601l6.75-1.855l0.25-3.75L27,28V11h12l-0.345,4H31v8L38.054,22z" />
+                                </svg>
+                                <p class="name pt-3 text-base font-semibold">JavaScript</p>
+                            </div>
+
+                            <div
+                                class="skill-item col-span-1 hover:text-primary flex flex-col items-center transition duration-200 hover:scale-110 cursor-scale">
+                                <svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 50 50" class="w-8">
+                                    <path
+                                        d="M43.03 27.802a10.286 10.286 0 00-4.53 1.054c-.464-.926-.934-1.741-1.013-2.347-.092-.707-.199-1.129-.088-1.972.111-.843.599-2.036.591-2.125-.007-.089-.109-.518-1.117-.526-1.008-.007-1.87.194-1.972.46a9.797 9.797 0 00-.416 1.49c-.177.914-2.012 4.174-3.055 5.879-.341-.666-.631-1.252-.691-1.716-.092-.707-.199-1.129-.088-1.972.111-.843.599-2.036.591-2.125-.007-.089-.109-.518-1.117-.526-1.008-.007-1.87.194-1.972.46-.102.266-.21.888-.416 1.49-.207.602-2.647 6.039-3.286 7.448a43.557 43.557 0 01-.809 1.689l-.001-.002-.034.071c-.171.335-.273.521-.273.521l.003.007c-.136.246-.281.475-.353.475-.05 0-.151-.656.022-1.555.363-1.886 1.235-4.828 1.227-4.929-.004-.052.162-.564-.57-.833-.711-.26-.965.174-1.03.175-.063.001-.11.153-.11.153s.793-3.308-1.512-3.308c-1.44 0-3.436 1.576-4.42 3.004a1269.137 1269.137 0 00-4.974 2.727l-.108-.118c-2.794-2.981-7.958-5.089-7.739-9.096.08-1.457.586-5.293 9.924-9.946 7.649-3.812 13.773-2.763 14.831-.438 1.512 3.321-3.273 9.494-11.216 10.384-3.027.339-4.62-.834-5.017-1.271-.417-.46-.479-.481-.635-.394-.254.141-.093.547 0 .789.237.617 1.21 1.712 2.87 2.256 1.46.479 5.013.742 9.311-.92 4.813-1.862 8.571-7.041 7.468-11.37-1.123-4.403-8.423-5.85-15.332-3.396-4.112 1.461-8.563 3.754-11.764 6.747-3.806 3.56-4.412 6.658-4.162 7.952.889 4.6 7.228 7.595 9.767 9.815l-.35.193c-1.273.63-6.105 3.159-7.314 5.831-1.371 3.031.218 5.206 1.271 5.499 3.26.907 6.606-.725 8.404-3.407 1.798-2.681 1.578-6.172.753-7.766l-.032-.059.996-.587c.648-.38 1.284-.735 1.836-1.036-.309.846-.535 1.86-.653 3.325-.138 1.721.567 3.945 1.49 4.82.406.385.895.394 1.205.394 1.074 0 1.564-.893 2.103-1.95.662-1.296 1.249-2.804 1.249-2.804s-.737 4.075 1.271 4.075c.731 0 1.467-.949 1.795-1.432l.001.008.056-.095c.076-.116.119-.19.119-.19l.004-.021c.294-.51.946-1.674 1.924-3.594 1.263-2.48 2.475-5.586 2.475-5.586s.113.76.482 2.015c.217.739.679 1.556 1.043 2.339-.293.407-.473.64-.473.64l.005.012a23.86 23.86 0 01-.772.974c-.997 1.188-2.185 2.544-2.344 2.936-.187.461-.143.801.219 1.073.264.199.735.23 1.227.197.896-.06 1.527-.283 1.838-.418a6.156 6.156 0 001.58-.831c.978-.719 1.568-1.748 1.512-3.111-.031-.751-.271-1.495-.574-2.198.089-.128.178-.256.267-.387 1.542-2.255 2.738-4.732 2.738-4.732s.113.76.482 2.015c.187.636.556 1.329.887 2.009-1.45 1.178-2.349 2.547-2.662 3.445-.577 1.661-.125 2.414.723 2.585.384.078.927-.098 1.335-.271a6.172 6.172 0 001.688-.868c.978-.719 1.919-1.726 1.862-3.089-.026-.62-.194-1.236-.422-1.828 1.229-.512 2.821-.797 4.848-.56 4.349.508 5.202 3.223 5.039 4.359-.163 1.137-1.075 1.761-1.38 1.95-.305.189-.398.254-.372.394.037.204.178.196.438.152.358-.06 2.283-.924 2.366-3.022.104-2.658-2.448-5.583-6.968-5.559zm-33.518 11.3c-1.44 1.571-3.453 2.165-4.316 1.665-.932-.54-.563-2.854 1.205-4.521 1.077-1.016 2.468-1.952 3.391-2.529l.893-.537.097-.055-.001-.002.223-.134c.643 2.374.02 4.464-1.492 6.113zm10.493-7.134c-.502 1.223-1.552 4.352-2.191 4.184-.549-.144-.883-2.523-.11-4.863.389-1.178 1.22-2.586 1.709-3.133.786-.879 1.652-1.167 1.862-.81.269.454-.955 3.855-1.27 4.622zm8.67 4.137c-.213.111-.408.181-.498.127-.067-.04.088-.186.088-.186s1.084-1.167 1.512-1.698c.248-.309.537-.676.85-1.086.003.041.004.082.004.122-.004 1.398-1.354 2.341-1.956 2.721zm6.679-1.523c-.159-.113-.132-.478.389-1.614.205-.446.672-1.198 1.485-1.916.094.295.152.578.15.842-.011 1.759-1.266 2.416-2.024 2.688z">
+                                    </path>
+                                </svg>
+                                <p class="name pt-3 text-base font-semibold">SASS</p>
+                            </div>
+                            <div
+                                class="skill-item col-span-1 hover:text-primary flex flex-col items-center transition duration-200 hover:scale-110 cursor-scale">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                    class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" />
+                                    <path
+                                        d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z" />
+                                </svg>
+                                <p class="name pt-3 text-base font-semibold">Bootstrap</p>
+                            </div>
+
+                            <div
+                                class="skill-item col-span-1 hover:text-primary flex flex-col items-center transition duration-200 hover:scale-110 cursor-scale">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" stroke="currentColor"
+                                    fill="currentColor" class="w-8">
+                                    <path
+                                        d="M24 9.605c-6.398 0-10.398 3.2-12 9.594 2.398-3.195 5.2-4.394 8.398-3.597 1.829.457 3.133 1.78 4.579 3.246C27.328 21.234 30.05 24 36 24c6.398 0 10.398-3.2 12-9.598-2.398 3.2-5.2 4.399-8.398 3.602-1.829-.457-3.133-1.781-4.579-3.25C32.672 12.367 29.95 9.605 24 9.605zM12 24c-6.398 0-10.398 3.2-12 9.598 2.398-3.2 5.2-4.399 8.398-3.598 1.829.457 3.133 1.781 4.579 3.246 2.351 2.387 5.074 5.152 11.023 5.152 6.398 0 10.398-3.199 12-9.597-2.398 3.195-5.2 4.398-8.398 3.597-1.829-.457-3.133-1.78-4.579-3.246C20.672 26.766 17.95 24 12 24zm0 0"
+                                        stroke="none"></path>
+                                </svg>
+                                <p class="name pt-3 text-base font-semibold">TailwindCSS</p>
+                            </div>
+                            <div
+                                class="skill-item col-span-1 hover:text-primary flex flex-col items-center transition duration-200 hover:scale-110 cursor-scale">
+                                <svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 50 50" fill-rule="evenodd" clip-rule="evenodd" class="w-8">
+                                    <path
+                                        d="M34.555 3.984c-.78-.026-1.596.11-2.414.375-1.637.53-3.352 1.565-5.112 2.996a31.739 31.739 0 00-2.084 1.883 31.578 31.578 0 00-2.039-1.836c-1.758-1.43-3.468-2.464-5.101-2.994-1.633-.53-3.258-.546-4.592.225-1.334.77-2.132 2.184-2.49 3.863-.358 1.679-.319 3.678.04 5.916.126.778.304 1.593.507 2.424-.763.231-1.503.474-2.19.742-2.072.81-3.787 1.778-5.035 2.93-1.249 1.152-2.055 2.55-2.055 4.086 0 1.535.806 2.932 2.055 4.084C5.293 29.83 7.008 30.8 9.08 31.609c.734.287 1.53.545 2.35.79a32.188 32.188 0 00-.698 3.187c-.36 2.24-.397 4.24-.039 5.922.36 1.682 1.157 3.105 2.498 3.879 1.341.774 2.973.755 4.61.224 1.636-.53 3.35-1.562 5.11-2.994a31.643 31.643 0 002.066-1.863c.695.677 1.389 1.314 2.076 1.873 1.758 1.43 3.47 2.463 5.103 2.992 1.633.53 3.258.546 4.592-.224 1.334-.77 2.13-2.185 2.488-3.864.358-1.678.319-3.676-.04-5.914a32.164 32.164 0 00-.7-3.197c.848-.25 1.668-.515 2.424-.81 2.072-.81 3.787-1.78 5.035-2.932 1.249-1.152 2.055-2.549 2.055-4.084 0-1.536-.806-2.934-2.055-4.086-1.248-1.152-2.963-2.12-5.035-2.93a30.001 30.001 0 00-2.223-.752c.205-.836.386-1.657.512-2.44.36-2.24.398-4.24.039-5.923-.359-1.683-1.159-3.103-2.5-3.877-.67-.387-1.414-.575-2.193-.602zm-.092 2.036c.49.013.907.13 1.264.335.714.413 1.241 1.215 1.523 2.536.282 1.32.272 3.104-.06 5.173-.114.709-.28 1.46-.467 2.229a46.398 46.398 0 00-6.676-1.072 48.192 48.192 0 00-3.674-4.518 29.432 29.432 0 011.947-1.76c1.626-1.322 3.165-2.222 4.45-2.638.642-.209 1.204-.299 1.693-.285zm-18.977.005c.492-.013 1.055.077 1.7.286 1.288.417 2.83 1.317 4.457 2.64a29.362 29.362 0 011.906 1.723 48.3 48.3 0 00-3.701 4.556 46.219 46.219 0 00-6.647 1.08 28.875 28.875 0 01-.465-2.216c-.332-2.071-.34-3.856-.058-5.18.282-1.324.814-2.133 1.535-2.549.36-.208.781-.326 1.273-.34zm9.49 6.118c.815.886 1.63 1.856 2.438 2.9A57.87 57.87 0 0025 14.99c-.833 0-1.652.02-2.46.055a45.06 45.06 0 012.437-2.902zM25 17.01c1.36 0 2.685.056 3.975.15a56.84 56.84 0 012.58 4.057 57.157 57.157 0 011.98 3.752 57.171 57.171 0 01-2.008 3.802 57.142 57.142 0 01-2.011 3.215c-1.457.122-2.966.19-4.516.19a54.15 54.15 0 01-4.62-.2 57.175 57.175 0 01-1.978-3.165 57.159 57.159 0 01-2.002-3.795 57.037 57.037 0 012.012-3.817 56.736 56.736 0 012.568-4.035A54.3 54.3 0 0125 17.01zm6.549.4c1.648.206 3.196.491 4.637.834a45.018 45.018 0 01-1.592 4.375c-.414-.798-.843-1.6-1.307-2.402a60.068 60.068 0 00-1.738-2.807zm-13.205.016c-.58.89-1.15 1.799-1.7 2.752-.469.813-.907 1.625-1.326 2.433a45 45 0 01-1.58-4.35 42.914 42.914 0 014.606-.835zm19.82 1.35c.709.214 1.394.438 2.022.683 1.91.746 3.42 1.63 4.4 2.533.98.904 1.404 1.766 1.404 2.602 0 .836-.425 1.698-1.404 2.601-.98.904-2.49 1.787-4.4 2.534-.698.272-1.465.52-2.262.753a49.523 49.523 0 00-2.158-5.466 48.431 48.431 0 002.398-6.24zm-26.361.01a48.324 48.324 0 002.367 6.177A49.526 49.526 0 0012 30.46a27.8 27.8 0 01-2.186-.732c-1.91-.747-3.42-1.63-4.4-2.534-.98-.903-1.404-1.765-1.404-2.601 0-.836.425-1.698 1.404-2.602.98-.904 2.49-1.787 4.4-2.533a27.487 27.487 0 011.989-.674zM25 20c-2.75 0-5 2.25-5 5s2.25 5 5 5 5-2.25 5-5-2.25-5-5-5zm-9.658 7.365c.42.813.858 1.628 1.33 2.446.369.639.746 1.261 1.129 1.873a42.765 42.765 0 01-3.819-.702c.382-1.167.838-2.38 1.36-3.617zm19.277 0c.524 1.24.98 2.455 1.363 3.625a42.87 42.87 0 01-3.83.7c.388-.62.771-1.25 1.145-1.897.468-.811.904-1.621 1.322-2.428zm-21.213 5.559a45.9 45.9 0 005.852.972 49.317 49.317 0 004.29 5.391 29.372 29.372 0 01-1.927 1.744c-1.626 1.323-3.167 2.22-4.451 2.637-1.284.416-2.243.361-2.957-.05-.714-.413-1.24-1.215-1.522-2.536-.281-1.32-.273-3.103.059-5.172.15-.939.376-1.944.656-2.986zm23.155.008a29.92 29.92 0 01.66 3.002c.332 2.07.34 3.855.058 5.18-.282 1.324-.81 2.134-1.531 2.55-.72.416-1.688.47-2.977.053-1.288-.418-2.83-1.317-4.457-2.64a29.44 29.44 0 01-1.941-1.759 49.237 49.237 0 004.32-5.418 46 46 0 005.868-.968zm-14.694 1.17c1.027.056 2.067.093 3.133.093 1.03 0 2.037-.035 3.031-.088a46.038 46.038 0 01-3.084 3.74 46.198 46.198 0 01-3.08-3.745z">
+                                    </path>
+                                </svg>
+                                <p class="name pt-3 text-base font-semibold">ReactJS</p>
+                            </div>
+                            <div
+                                class="skill-item col-span-1 hover:text-primary flex flex-col items-center transition duration-200 hover:scale-110 cursor-scale">
+                                <svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                    width="30" height="30" fill="currentColor" class="bi bi-bootstrap-fill"
+                                    viewBox="-1 -1 25 25">
+                                    <path
+                                        d="M6.836,20.853c-0.418,0-0.836-0.106-1.219-0.32l-0.523-0.293c-0.361-0.202-0.49-0.658-0.288-1.021c0.201-0.36,0.658-0.491,1.021-0.288l0.522,0.292c0.316,0.175,0.678,0.173,0.992-0.011c0.315-0.186,0.497-0.503,0.497-0.871V7.598c0-0.414,0.336-0.75,0.75-0.75s0.75,0.336,0.75,0.75v10.743c0,0.9-0.463,1.709-1.238,2.164C7.706,20.736,7.271,20.853,6.836,20.853z" />
+                                    <path
+                                        d="M12.002,23.999c-0.313,0-0.626-0.081-0.904-0.244l-2.403-1.407c-0.357-0.21-0.478-0.669-0.269-1.026c0.209-0.358,0.668-0.477,1.026-0.269l2.403,1.407c0.09,0.054,0.198,0.055,0.292,0l8.699-5.094C20.941,17.311,21,17.207,21,17.091V6.906c0-0.114-0.06-0.22-0.156-0.276l-8.695-5.09c-0.092-0.053-0.202-0.054-0.29-0.001L3.151,6.632C3.058,6.687,3,6.791,3,6.904v10.187c0,0.112,0.06,0.22,0.152,0.273l2.688,1.574c0.357,0.21,0.478,0.669,0.269,1.026c-0.21,0.356-0.669,0.476-1.026,0.269l-2.688-1.574C1.843,18.336,1.5,17.734,1.5,17.091V6.906C1.498,6.264,1.841,5.662,2.393,5.338l8.704-5.092c0.558-0.327,1.25-0.328,1.81-0.001l8.697,5.091c0.554,0.326,0.896,0.928,0.896,1.57v10.187c-0.002,0.643-0.344,1.241-0.893,1.566l-8.702,5.096C12.627,23.918,12.314,23.999,12.002,23.999z" />
+                                    <path
+                                        d="M14.438,17.152c-2.248,0-4.65-0.775-4.65-2.951c0-0.414,0.336-0.75,0.75-0.75s0.75,0.336,0.75,0.75c0,1.146,1.98,1.451,3.15,1.451c2.09,0,3.15-0.225,3.15-1.451c0-0.616-0.752-0.857-2.599-1.297l-0.732-0.177c-0.224-0.055-0.461-0.107-0.704-0.161c-1.589-0.351-3.766-0.83-3.766-2.768c0-2.176,2.402-2.951,4.65-2.951s4.65,0.775,4.65,2.951c0,0.414-0.336,0.75-0.75,0.75s-0.75-0.336-0.75-0.75c0-1.146-1.98-1.451-3.15-1.451s-3.15,0.306-3.15,1.451c0,0.678,1.122,0.979,2.589,1.303c0.257,0.057,0.507,0.112,0.742,0.171l0.718,0.173c1.93,0.459,3.752,0.893,3.752,2.756C19.088,17.152,15.947,17.152,14.438,17.152z" />
+                                </svg>
+                                <p class="name pt-3 text-base font-semibold">NodeJS</p>
+                            </div>
+
+                            <div
+                                class="skill-item col-span-1 hover:text-primary flex flex-col items-center transition duration-200 hover:scale-110 cursor-scale">
+                                <svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 50 50" class="w-8">
+                                    <path
+                                        d="M24 2c-7.168 0-13 8.292-13 18.486 0 5.267 1.565 10.009 4.06 13.373A3.5 3.5 0 0018.5 38a3.5 3.5 0 100-7 3.5 3.5 0 00-.568.05C16.144 28.388 15 24.612 15 20.487 15 12.633 19.122 6 24 6c4.119 0 7.69 4.738 8.703 10.938a26.97 26.97 0 014.227 1.626C36.252 9.27 30.712 2 24 2zm-1.5 15a3.5 3.5 0 100 7 3.5 3.5 0 003.14-1.959c3.25-.204 7.006.8 10.473 2.877 6.86 4.113 10.59 11.305 8.145 15.705-.804 1.446-2.253 2.486-4.19 3.004-2.789.746-6.209.367-9.578-.988a28.17 28.17 0 01-3.527 2.785c3.328 1.68 6.847 2.572 10.1 2.572 1.41 0 2.77-.166 4.04-.506 3.008-.805 5.308-2.508 6.65-4.924 3.585-6.449-.625-15.708-9.583-21.078-4.263-2.556-8.984-3.734-13.135-3.394A3.5 3.5 0 0022.5 17zM9.16 23.324C2.08 28.795-.958 36.8 2.248 42.566c1.343 2.416 3.643 4.12 6.65 4.924a15.64 15.64 0 004.041.506c3.8 0 7.971-1.206 11.768-3.482 4.248-2.547 7.389-5.97 9.17-9.551C35.628 34.773 37 33.3 37 31.5c0-1.93-1.57-3.5-3.5-3.5S30 29.57 30 31.5c0 .54.132 1.047.352 1.504-1.444 2.975-4.139 5.941-7.702 8.078-4.296 2.576-9.05 3.528-12.718 2.545-1.936-.518-3.384-1.558-4.188-3.004-1.934-3.48.002-8.7 4.285-12.768a26.521 26.521 0 01-.869-4.53z">
+                                    </path>
+                                </svg>
+                                <p class="name pt-3 text-base font-semibold">Redux</p>
+                            </div>
+                            <div
+                                class="skill-item col-span-1 hover:text-primary flex flex-col items-center transition duration-200 hover:scale-110 cursor-scale">
+                                <svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 50 50" class="w-8">
+                                    <path
+                                        d="M46.793 22.09L27.91 3.207A4.093 4.093 0 0025 2c-1.055 0-2.11.402-2.91 1.207l-3.735 3.734 4.622 4.622a3.994 3.994 0 014.851.609 3.988 3.988 0 01.606 4.848l4.543 4.543a3.994 3.994 0 014.851 6.265 3.994 3.994 0 01-6.266-4.852l-4.542-4.542a3.855 3.855 0 01-1.02.421v12.286A3.99 3.99 0 0129 35c0 2.21-1.79 4-4 4s-4-1.79-4-4a3.99 3.99 0 013-3.86V18.856a3.955 3.955 0 01-1.828-1.027 3.988 3.988 0 01-.606-4.848l-4.625-4.625L3.207 22.09a4.112 4.112 0 000 5.82L22.09 46.793A4.093 4.093 0 0025 48c1.055 0 2.11-.402 2.91-1.207L46.793 27.91a4.112 4.112 0 000-5.82z">
+                                    </path>
+                                </svg>
+                                <p class="name pt-3 text-base font-semibold">Git</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!--===== EDUCATION =====-->
+            <section class="education section">
+                <span class="section-subtitle">Qualification</span>
+                <h2 class="section-title">My Education</h2>
+
+                <div class="education__container bd-grid drop toBottom">
+                    <div class="education__content">
+                        <div>
+                            <h3 class="education__year">2013 - 2019</h3>
+                            <span class="education__university">University of Transport HCM</span>
+                        </div>
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+                        <div>
+                            <h3 class="education__race">The Degree of Engineer</h3>
+                            <span class="education__specialty">Industrial Automation</span>
+                        </div>
+                    </div>
+
+                    <div class="education__content">
+                        <div>
+                            <h3 class="education__year">2021</h3>
+                            <span class="education__university">Cybersoft Academy</span>
+                        </div>
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+                        <div>
+                            <h3 class="education__race">Diploma Development</h3>
+                            <span class="education__specialty">Frontend</span>
+                        </div>
+                    </div>
+
+                    <!-- <div class="education__content">
+                    <div>
+                        <h3 class="education__year">2021</h3>
+                        <span class="education__university">Cybersoft Academy</span>
+                    </div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+                    <div>
+                        <h3 class="education__race">Diploma Design</h3>
+                        <span class="education__specialty">UX/UI</span>
+                    </div>
+                </div> -->
+            </section>
+        </div>
+
+        <!--===== WORKS =====-->
+        <section class="works section" id="works">
+            <span class="section-subtitle">My porfolio</span>
+            <h2 class="section-title">Recent Projects</h2>
+            <div class="works__container bd-grid">
+
+                <div class="works__img mx-2">
+                    <div class="work-item">
+                        <video class="video-bg" autoplay loop playsinline poster="/assets/img/pj0capture.JPG"
+                            preload="auto" muted>
+                            <source src="./assets/vid/studious_Thumb.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="works__data p-5">
+                        <a href="https://github.com/Hanh28111995/StudiousHomePage" class="works__link"><i
+                                class="bx bx-link-alt"></i></a>
+                        <span class="works__title">Github</span>
+                    </div>
+                    <h3 class="font-bold text-2xl text-center"> Studious HomePage</h3>
+                </div>
+
+                <div class="works__img mx-2">
+                    <div class="work-item">
+                        <video class="video-bg" autoplay loop playsinline poster="/assets/img/pj2capture.JPG"
+                            preload="auto" muted>
+                            <source src="./assets/vid/movieBooking_Thumb.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="works__data p-5">
+                        <a href="https://github.com/Hanh28111995/bc29_reactjs_capstone_tranhuuhanh"
+                            class="works__link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works__title">Github</span>
+                    </div>
+                    <h3 class="font-bold text-2xl text-center"> Movie Booking</h3>
+                </div>
+
+                <div class="works__img mx-2">
+                    <div class="work-item">
+                        <video class="video-bg" autoplay loop playsinline poster="/assets/img/pj1capture.JPG"
+                            preload="auto" muted>
+                            <source src="./assets/vid/Jire_Thumb.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="works__data p-5">
+                        <a href="https://github.com/Hanh28111995/BC29_CAPSTON_FINAL_HANH_TRAN/" class="works__link"><i
+                                class="bx bx-link-alt"></i></a>
+                        <span class="works__title">Github</span>
+                    </div>
+                    <h3 class="font-bold text-2xl text-center"> Jira Projects Management</h3>
+                </div>
+
+                <div class="works__img mx-2">
+                    <div class="work-item">
+                        <video class="video-bg" autoplay loop playsinline poster="/assets/img/pj4capture.JPG"
+                            preload="auto" muted>
+                            <source src="./assets/vid/CPhone_Thumb.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="works__data p-5">
+                        <a href="https://github.com/Hanh28111995/Cyberphone_nodejs" class="works__link"><i
+                                class="bx bx-link-alt"></i></a>
+                        <span class="works__title">Github</span>
+                    </div>
+                    <h3 class="font-bold text-2xl text-center"> Cyber Phone</h3>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <span class="section-subtitle">Contact Me</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact__container bd-grid">
+                <form onsubmit="sendEmail(); reset(); " class="contact__form px-8 drop toRight">
+                    <div class="contact__inputs">
+                        <input id="name" type="text" placeholder="Name" class="contact__input">
+                        <input id="email" type="email" placeholder="Email" class="contact__input">
+                    </div>
+                    <textarea id="message" name="" id="" cols="30" rows="10" placeholder="Message"
+                        class="contact__input"></textarea>
+                    <input type="submit" value="Send Message" class="button contact__button">
+                </form>
+                <div class="drop toLeft px-8">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Call me</h3>
+                        <span class="contact__text">0789793059</span>
+                    </div>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">E-mail</h3>
+                        <span id='mymail' class="contact__text">gm.tranhuuhanh@gmail.com</span>
+                    </div>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Location</h3>
+                        <span class="contact__text" style="text-decoration: underline;"><a
+                                href="https://goo.gl/maps/L5W5uCciESNKCuRJ9"><i>Show Address Detail </i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <h1 class="footer__title">Hanh Tran</h1>
+            <p class="footer__description">I am Hanh and this is my persional website, consuit me hear.</p>
+
+            <div class="footer__social mb-5">
+                <a href="https://www.facebook.com/gm.tranhuuhanh/" class="footer__link"> <i
+                        class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/gm_tranhuuhanh/" class="footer__link"> <i
+                        class="bx bxl-instagram"></i></a>
+                <a href="#" class="footer__link"> <i class="bx bxl-twitter"></i></a>
+            </div>
+            <p class="footer__copy">All right reserved by Bedimcode - 2020</p>
+
+        </div>
+    </footer>
+
+    <!-- mail send -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
